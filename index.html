@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navbar -->
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -19,41 +20,64 @@
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Welcome to EVs and Clean Energy</h1>
-        <p>Your go-to source for everything related to electric vehicles and renewable energy.</p>
-        <a href="#about" class="cta-button">Learn More</a>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are passionate about electric vehicles and the transition to clean energy. Our goal is to help you navigate this exciting space through data-driven insights and educational content.</p>
-    </section>
-
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="post-preview">
-            <h3>EV Trends in 2025</h3>
-            <p>Discover the latest trends in the electric vehicle market, including new innovations and policy changes.</p>
-            <a href="#">Read More</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to EVs and Clean Energy</h1>
+            <p>Your go-to resource for electric vehicles and sustainable energy insights.</p>
+            <a href="#about" class="cta-button">Learn More</a>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you have any questions or want to collaborate, feel free to reach out!</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are passionate about the transition to clean energy and the growth of electric vehicles. We provide data-driven insights and resources to help individuals and organizations adopt sustainable solutions.</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-container">
+            <div class="blog-card">
+                <h3>EV Trends in 2025</h3>
+                <p>Stay updated on the latest developments in the electric vehicle market, including innovations and policy changes.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h3>How Solar Can Power Your EV</h3>
+                <p>Learn how solar power can be integrated with EVs to create a fully sustainable transportation solution.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h3>Government Incentives for EVs</h3>
+                <p>Discover the best government programs and incentives that can help you make the switch to electric vehicles.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
         <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 EVs and Clean Energy | All Rights Reserved</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>

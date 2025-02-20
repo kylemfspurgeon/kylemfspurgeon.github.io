@@ -1,13 +1,11 @@
-// Example of a simple interactive element: a "back to top" button.
-document.addEventListener('scroll', function() {
-    const scrollButton = document.getElementById('scrollTopBtn');
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollButton.style.display = 'block';
-    } else {
-        scrollButton.style.display = 'none';
-    }
-});
+// Smooth Scroll for Navigation Links
+document.querySelectorAll('.navbar ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
